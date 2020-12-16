@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lakehead Newsprint</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="otherStyle.css">
+    <style>
+        /* 5/5 Screen Size */
+        .container {
+            background-color: whitesmoke;
+            margin: 0 auto;
+            width: 60%;
+            display: flex;
+            flex-wrap: wrap;
+            border: 0;
+
+        }
+            .container div {
+                margin: 15px auto 15px auto;
+                width: 30%;
+                line-height: 1.6;
+                font-family: Calibri;
+                text-align: left;
+                font-size: 120%;
+                color: grey;
+            }
+            .container div a {
+                margin: 0;
+                text-decoration: none;
+                font-size: 125%;
+                line-height: 1.2;
+                color: dimgrey;
+            }
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @-webkit-keyframes fade {
+            from { opacity: .4 }
+            to { opacity: 1 }
+        }
+        @keyframes fade {
+            from { opacity: .4 }
+            to { opacity: 1 }
+        }
+        /* Slideshow Display */
+        .slideShow { display: none; }
+        .slideVisibility { display: block; }
+        /* 4/5 Screen Size */
+        @media only screen and (max-width: 1536px) {
+            .container {
+                background-color: whitesmoke;
+                margin: 0 auto;
+                width: 70%;
+                display: flex;
+                flex-wrap: wrap;
+                border: 0;
+                padding-top: 1px;
+            }
+                .container div {
+                    margin: 15px auto 15px auto;
+                    width: 30%;
+                    line-height: 1.6;
+                    font-family: Calibri;
+                    text-align: left;
+                    font-size: 120%;
+                    color: grey;
+                }
+            .slideVisibility { display: block; }
+        }
+            /* 3/5 Screen Size */
+        @media only screen and (max-width: 1152px) {
+            .container {
+                background-color: whitesmoke;
+                margin: 0 auto;
+                width: 80%;
+                display: flex;
+                flex-wrap: wrap;
+                border: 0;
+                padding-top: 1px;
+            }
+                .container div {
+                    margin: 15px auto 15px auto;
+                    width: 30%;
+                    line-height: 1.6;
+                    font-family: Calibri;
+                    text-align: left;
+                    font-size: 120%;
+                    color: grey;
+                }
+        .slideVisibility { display: block; }
+        }
+            /* 2/5 Screen Size */
+        @media only screen and (max-width: 952px) {
+            .container {
+                background-color: whitesmoke;
+                margin: 0 auto;
+                width: 80%;
+                display: flex;
+                flex-wrap: wrap;
+                border: 0;
+                padding-top: 1px;
+            }
+                .container div {
+                    margin: 15px auto 15px auto;
+                    width: 100%;
+                    line-height: 1.6;
+                    font-family: Calibri;
+                    text-align: left;
+                    font-size: 120%;
+                    color: grey;
+                }
+            .slideVisibility { display: none; }
+        }
+            /* 1/5 Screen Size */
+        @media only screen and (max-width: 550px) {
+            .container {
+                background-color: whitesmoke;
+                margin: 0 auto;
+                width: 90%;
+                display: flex;
+                flex-wrap: wrap;
+                border: 0;
+                padding-top: 1px;
+            }
+                .container div {
+                    margin: 15px auto 15px auto;
+                    width: 100%;
+                    line-height: 1.6;
+                    font-family: Calibri;
+                    text-align: left;
+                    font-size: 120%;
+                    color: grey;
+                }
+            .slideVisibility { display: none; }
+        }
+    </style>
+</head>
+<body>
+        <!-- Top Bar -->
+        <header>
+            <!-- Contact Segment -->
+            <div class="contactInfo">
+                <span style="font-family:Calibri"></span>
+                <i class="fa fa-envelope" title="jamesmac@lakeheadnewsprint.com"></i><span>&ensp;jamesmac@lakeheadnewsprint.com</span> &emsp;
+                <i class="fa fa-phone" title="+1 (807) 345-0500"></i><span>&ensp;+1 (807) 345-0500</span>
+            </div>
+            <div class="menu">
+                <!-- Title Segment -->
+                <div class="spacer">
+                    <a href="Index.html" class="title">Lakehead Newsprint</a>
+                </div>
+                <!-- Navigation Segment 1/2 -->
+                <ul>
+                    <li style="border-right:none;"><a href="Contactus.html">Contact Us</a></li>
+                    <li class="dropmenu">
+                        <a href="Aboutus.html" class="dropbutton">About Us</a>
+                        <div class="dropmenu-content">
+                            <a href="Whatwedo.html">What We Do</a>
+                            <a href="Members.html">Members</a>
+                        </div>
+                    </li>
+                    <li class="dropmenu">
+                        <a href="Products.html" class="dropbutton">Products</a>
+                        <div class="dropmenu-content">
+                            <a href="Counterrolls.html">Counter Rolls</a>
+                            <a href="Newsprintsheets.html">Newsprint Sheets</a>
+                            <a href="Specialtysheets.html">Specialty Sheets</a>
+                        </div>
+                    </li>
+                    <!-- Sandwich Style Navigation 2/2 -->
+                    <li><a href="Index.html">Home</a></li>
+                    <li class="sandwichmenu">
+                        <a href="#Menu" class="sandwichbutton"><i class="fa fa-bars"></i></a>
+                        <div class="sandwichmenu-content">
+                            <a href="Index.html">Home</a>
+                            <a href="Products.html">Products</a>
+                            <a href="Aboutus.html">About Us</a>
+                            <a href="Contactus.html">Contact Us</a>
+                        </div>
+                    </li>
+                    <!-- End Added -->
+                </ul>
+            </div>
+        </header>
+        <!-- Location Trail -->
+        <div class="breadCrumb">
+            <a href="Index.html">Home</a><a>&ensp;/&ensp;</a><a href="Products.html">Products</a><a>&ensp;/&ensp;</a>
+        </div>
+        <!-- Page Content -->
+        <div class="container">
+            <div style="width:100%;margin:0 auto 0 auto;">
+                <p style="line-height:1.2;font-size:150%;color:dimgrey;">Products</p>
+            </div>
+            <div>
+                <img src="stock.jpg" style="width:100%;margin:0;">
+                <a href="Counterrolls.html">Counter Rolls</a>
+                <p>Small diameter, lightweight rolls that are easy to handle. Can be run to lineal footage, weight per roll, or diameter. Multiple stocking grades available.</p>
+            </div>
+            <div>
+                <img src="stock.jpg" style="width:100%;margin:0;">
+                <a href="Newsprintsheets.html">Newsprint Sheets</a>
+                <p>Low cost square sheets that are easy to handle. For wrapping, stuffing/void fill and interleaving. Packaged in either kraft wrapped bundles, poly wrapped bundles, or cartons. Available in various sizes.</p>
+            </div>
+            <div>
+                <img src="stock.jpg" style="width:100%;">
+                <a href="Specialtysheets.html">Specialty Sheets</a>
+                <p>Recycled kraft paper available in various sizes and basis weights. Also offer hi bulk newsprint, a soft virgin paper ideal for glass interleaving. All of the aforementioned is available in various sizes.</p>
+            </div>
+        </div>
+        <div class="whiteSpace"></div>
+        <!-- Footer Bar -->
+        <div class="footer">
+            <div>
+                <div>&ensp;Lakehead Newsprint&ensp;</div>
+                <div>&emsp;100 Main St, Ste. 101, Thunder Bay, ON, P7B 6R9&emsp;</div>
+                <div>&ensp;+1 (807) 345-0500&ensp;</div>
+            </div>
+        </div>
+</body>
+</html>

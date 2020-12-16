@@ -4,7 +4,7 @@
     <title>Lakehead Newsprint</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="mainStyle2.css">
+    <link rel="stylesheet" href="otherStyle.css">
     <style>
         /* 5/5 Screen Size */
         .container {
@@ -14,8 +14,10 @@
             display: flex;
             flex-wrap: wrap;
             border: 0;
-
         }
+            .container a:hover {
+                background-color: #cc2929;
+            }
             .container div {
                 margin: 15px auto 15px auto;
                 width: 30%;
@@ -25,33 +27,12 @@
                 font-size: 120%;
                 color: grey;
             }
-            .container div a {
-                margin: 0;
-                text-decoration: none;
-                font-size: 125%;
-                line-height: 1.2;
-                color: dimgrey;
+            .container div img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+                margin: 0 auto;
             }
-        /* Fading animation */
-        .fade {
-            -webkit-animation-name: fade;
-            -webkit-animation-duration: 1.5s;
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-        @-webkit-keyframes fade {
-            from { opacity: .4 }
-            to { opacity: 1 }
-        }
-        @keyframes fade {
-            from { opacity: .4 }
-            to { opacity: 1 }
-        }
-        /* Slideshow Display */
-        .slideShowBig { display: none; }
-        .slideShowSmall { display: none; }
-        .slideVisibility { display: block; }
-        .slideVisibilitySmall { display: none; }
         /* 4/5 Screen Size */
         @media only screen and (max-width: 1536px) {
             .container {
@@ -72,8 +53,6 @@
                     font-size: 120%;
                     color: grey;
                 }
-            .slideVisibility { display: block; }
-            .slideVisibilitySmall { display: none; }
         }
             /* 3/5 Screen Size */
         @media only screen and (max-width: 1152px) {
@@ -95,10 +74,8 @@
                     font-size: 120%;
                     color: grey;
                 }
-        .slideVisibility { display: block; }
-        .slideVisibilitySmall { display: none; }
         }
-            /* 2/5 Screen Size */
+         /* 2/5 Screen Size */
         @media only screen and (max-width: 952px) {
             .container {
                 background-color: whitesmoke;
@@ -118,10 +95,8 @@
                     font-size: 120%;
                     color: grey;
                 }
-            .slideVisibility { display: none; }
-            .slideVisibilitySmall { display: block; }
         }
-            /* 1/5 Screen Size */
+        /* 1/5 Screen Size */
         @media only screen and (max-width: 550px) {
             .container {
                 background-color: whitesmoke;
@@ -133,7 +108,7 @@
                 padding-top: 1px;
             }
                 .container div {
-                    margin: 15px auto 15px auto;
+                    margin: 0px auto 0px auto;
                     width: 100%;
                     line-height: 1.6;
                     font-family: Calibri;
@@ -141,8 +116,6 @@
                     font-size: 120%;
                     color: grey;
                 }
-            .slideVisibility { display: none; }
-            .slideVisibilitySmall { display: block; }
         }
     </style>
 </head>
@@ -185,7 +158,7 @@
                     <div class="sandwichmenu-content">
                         <a href="Index.html">Home</a>
                         <a href="Products.html">Products</a>
-                        <a href="#Aboutus.html">About Us</a>
+                        <a href="Aboutus.html">About Us</a>
                         <a href="Contactus.html">Contact Us</a>
                     </div>
                 </li>
@@ -195,41 +168,31 @@
     </header>
     <!-- Location Trail -->
     <div class="breadCrumb">
-        <a href="Index.html">Home</a><a>&ensp;/&ensp;</a>
-    </div>
-    <!-- Image Slideshow -->
-    <!-- Large Displays -->
-    <div class="slideVisibility">
-        <img class="slideShowBig fade" src="slide01.jpg" style="width:99.8%;margin:0 0.1% 10px 0.1%;border-top:1px solid grey;border-bottom:1px solid grey;">
-        <img class="slideShowBig fade" src="slide02.jpg" style="width:99.8%;margin:0 0.1% 10px 0.1%;border-top:1px solid grey;border-bottom:1px solid grey;">
-        <img class="slideShowBig fade" src="slide03.jpg" style="width:99.8%;margin:0 0.1% 10px 0.1%;border-top:1px solid grey;border-bottom:1px solid grey;">
-    </div>
-    <!-- Small Displays -->
-    <div class="slideVisibilitySmall">
-        <img class="slideShowSmall fade" src="slide01alt.jpg" style="width:99.8%;margin:0 0.1% 10px 0.1%;border-top:1px solid grey;border-bottom:1px solid grey;">
-        <img class="slideShowSmall fade" src="slide02alt.jpg" style="width:99.8%;margin:0 0.1% 10px 0.1%;border-top:1px solid grey;border-bottom:1px solid grey;">
-        <img class="slideShowSmall fade" src="slide03alt.jpg" style="width:99.8%;margin:0 0.1% 10px 0.1%;border-top:1px solid grey;border-bottom:1px solid grey;">
+        <a href="Index.html">Home</a><a>&ensp;/&ensp;</a><a href="Products.html">Products</a><a>&ensp;/&ensp;</a><a href="Newsprintsheets.html">Newsprint Sheets</a>
     </div>
     <!-- Page Content -->
     <div class="container">
         <div style="width:100%;margin:0 auto 0 auto;">
-            <p style="line-height:1.2;font-size:150%;color:dimgrey;">Northwestern Ontario Paper Converter</p>
-            <p style="margin-top:0;">Lakehead Newsprint is a source company for newsprint and groundwood specialty papers, in sheets or rolls, for printing or packaging. We have our own converting facility which is located in Thunder Bay, Ontario, Canada.<br><br>Lakehead Newsprint's primary suppliers are uncoated groundwood mills. Please refer to our products page for more details.</p>
+            <p style="line-height:1.2;font-size:150%;color:dimgrey;">Newsprint Sheets</p>
         </div>
         <div>
-            <img src="stock.jpg" style="width:100%;margin:0;">
-            <a href="Products.html">Our converted products</a>
-            <p>We offer virgin newsprint, up to 100% recycled, in various basis weights. Colored newsprint and hi brite groundwood specialties also available. Available in rolls and sheets.</p>
+            <img src="newsprint.jpg" width="300" height="300">
         </div>
         <div>
-            <img src="stock.jpg" style="width:100%;margin:0;">
-            <a href="Aboutus.html">Who we are and what we do</a>
-            <p>Lakehead Newsprint has been converting newsprint and kraft papers into sheets and counter rolls since 1957.</p>
+            <p style="text-align:left;width:95%;font-size: 120%;color:dimgrey;margin-bottom:5px;">Description</p>
+            <p style="margin:0;">Low cost and easy to handle. For wrapping, stuffing or void fill, and interleaving. Available in kraft wrapped bundles, poly wrapped bundles, and cartons.</p>
+            <p style="text-align:left;width:95%;font-size: 120%;color:dimgrey;margin-bottom:5px;">Standard Sizes</p>
+            <p style="margin:0;">18" x&ensp;24"<br>20" x&ensp;30"<br>24" x&ensp;30"<br>24" x&ensp;36"</p>
         </div>
         <div>
-            <img src="stock.jpg" style="width:100%;">
-            <a href="Contactus.html">Reach out to us</a>
-            <p>We encourage you to say hello! Contact us for further information on our services. Available on call Monday to Friday from 7:45pm to 3:45pm EST or by e-mail always. </p>
+            <p style="text-align:left;width:95%;font-size: 120%;color:dimgrey;margin-bottom:5px;">Stocking Grades</p>
+            <p style="margin:0 0 15px 0;">- Prime<br>- Cull</p>
+        </div>
+        <div style="width:100%;margin:15px auto 15px auto;">
+            <p style="margin:0;padding-top:30px;border-top:1px solid grey;">Can also manufacture any size between 8.5" x&ensp;11" and 72" x&ensp;96". Contact for further information.</p>
+        </div>
+        <div style="width:150px;margin:50px auto 15px auto;background-color:#DE1B1B;border:1px solid #cc2929;">
+            <a href="Contactus.html" style="display:block;text-decoration:none;font-size:120%;color:whitesmoke;width:100%;text-align:center;transition:background-color 0.2s ease;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Contact Us</a>
         </div>
     </div>
     <div class="whiteSpace"></div>
@@ -241,40 +204,5 @@
             <div>&ensp;+1 (807) 345-0500&ensp;</div>
         </div>
     </div>
-    <!-- Slideshow Script -->
-    <!-- Script for large-window slideshow -->
-    <script>
-        var bigIndex = 0;
-        headerPicture();
-
-        function headerPicture() {
-            var i;
-            var x = document.getElementsByClassName("slideShowBig");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            bigIndex++;
-            if (bigIndex > x.length) { bigIndex = 1 }
-            x[bigIndex - 1].style.display = "block";
-            setTimeout(headerPicture, 4000); // Change image every 4 seconds
-        }
-    </script>
-    <!-- Script for small-window slideshow -->
-    <script>
-        var smallIndex = 0;
-        headerPicture();
-
-        function headerPicture() {
-            var i;
-            var x = document.getElementsByClassName("slideShowSmall");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            smallIndex++;
-            if (smallIndex > x.length) { smallIndex = 1 }
-            x[smallIndex - 1].style.display = "block";
-            setTimeout(headerPicture, 4000); // Change image every 4 seconds
-        }
-    </script>
 </body>
 </html>

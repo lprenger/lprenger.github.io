@@ -1,0 +1,854 @@
+        /* 5/5 Screen Size */
+        .contactInfo {
+            background-color: #cc2929;
+            color: whitesmoke;
+            height: 19px;
+            font-size: 1em;
+            text-align: right;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-right: 20%; /* SCREEN ALTER */
+        }
+        .contactInfo span {
+            font-family: Calibri;
+            display: inline; /* SCREEN ALTER */
+        }
+        .contactInfo i {
+            display: inline; /* SCREEN ALTER */
+        }
+        .menu {
+            display: inline;
+            margin: 0;
+        }
+            .menu ul {
+                list-style-type: none;
+                margin: 0;
+                padding-right: 20%; /* SCREEN ALTER */
+                overflow: hidden;
+                background-color: #DE1B1B;
+                font-family: Calibri;
+                font-size: 120%;
+            }
+            .menu li:not(.title):not(.sandwichmenu):not(.sandwichmenu-content):not(.sandwichbutton) {
+                float: right;
+                border-right: 1px solid #cc2929;
+            }
+                .menu li:first-child {
+                    border-right: none;
+                }
+                .menu li a:not(.title):not(.sandwichenu):not(.sandwichmenu-content):not(.sandwichbutton), .dropbutton {
+                    display: block; /* SCREEN ALTER */
+                    width: 85px;
+                    text-align: center;
+                    padding: 14px 18px; /* SCREEN ALTER */
+                    text-decoration: none;
+                    transition: background-color 0.2s ease;
+                    color: whitesmoke;
+                }
+            .menu li a:hover:not(.title):not(.sandwichmenu):not(.sandwichmenu-content):not(.sandwichbutton), .dropmenu:hover .dropbutton {
+                background-color: #cc2929;
+                color: whitesmoke;
+            }
+        /* Sandwich Menu */
+        .sandwichbutton {
+            display: none; /* SCREEN ALTER */
+            text-align: center;
+            padding: 14px 16px;
+            width: 20px;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+            color: whitesmoke;
+        }
+        .sandwichmenu:hover .sandwichbutton {
+            background-color: #cc2929;
+            color: whitesmoke;
+        }
+        .sandwichmenu {
+            display: inline-block;
+            float: right;
+        }
+        .sandwichmenu-content {
+            display: none;
+            background-color: #DE1B1B;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+            .sandwichmenu-content a {
+                color: whitesmoke !important;
+                font-size: 100% !important;
+                text-align: center !important;
+                float: left;
+                padding: 8px 0px 8px 0px !important;
+                text-decoration: none;
+                box-sizing: border-box;
+                border-right: 1px solid #cc2929;
+                border-bottom: 1px solid #cc2929;
+                transition: background-color 0.2s ease !important;
+                display: inline;
+                width: 25% !important; /* SCREEN ALTER */
+            }
+            .sandwichmenu-content a:hover {
+                background-color: #cc2929;
+            }
+            .sandwichmenu:hover .sandwichmenu-content {
+                display: inline-block !important;
+            }
+        /* End Sandwich Menu */
+        .spacer {
+            margin: 0;
+            background-color: #DE1B1B;
+            float: left;
+            padding-left: 20%; /* SCREEN ALTER */
+        }
+        .title {
+            margin: 0;
+            background-color: #DE1B1B;
+            font-family: "Times New Roman";
+            font-size: 250%;
+            color: whitesmoke;
+            text-decoration: none;
+            padding-left: 0;
+            padding-bottom: 4px;
+            float: left;
+        }
+        .dropmenu {
+            display: inline-block; 
+        }
+        .dropmenu-content {
+            display: none;
+            position: absolute;
+            background-color: whitesmoke;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+            .dropmenu-content a {
+                color: grey !important;
+                font-size: 100% !important;
+                padding: 8px 16px !important;
+                min-width: 150px;
+                border-bottom: 1px solid #f1f1f1;
+                text-decoration: none;
+                transition: background-color 0.2s ease !important;
+                display: block;
+                text-align: left !important;
+            }
+            .dropmenu-content a:last-child {
+                border-bottom: none;
+            }
+                .dropmenu-content a:hover {
+                    background-color: #d8d8d8 !important;
+                }
+        .dropmenu:hover .dropmenu-content {
+            display: block !important;
+        }
+	body {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+	    box-sizing: border-box;
+            background-color: whitesmoke;
+	    border-right: 1px solid #c3c3c3;
+	}
+        .whiteSpace {
+            flex: 1;
+        }
+        .breadCrumb {
+            background-color: whitesmoke;
+            box-sizing: border-box;
+            width: 100%;
+            padding-left: 20%; /* SCREEN ALTER */
+            box-shadow: 0 -1px 0 #cc2929;
+            float: left;
+	    border-bottom: 0;
+        }
+        .breadCrumb a {
+            color: grey;
+            font-family: Calibri;
+            text-decoration: none;
+            font-size: 90%
+        }
+        /* ADDING */
+        .footer {
+            background-color: #d8d8d8;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            box-sizing: border-box;
+	    border-top: 1px solid #c3c3c3;
+            padding: 0 2% 0 2%;
+            margin-top: 15px;
+        }
+            .footer div {
+                margin: 10px auto 10px auto;
+                display: inline-flex;
+                flex-wrap: wrap;
+            }
+                .footer div div {
+                    margin: 5px auto 5px auto;
+                    font-family: Calibri;
+                    text-align: center;
+                    font-size: 130%;
+                    color: grey;
+                }
+
+    /* 4/5 Screen Size */
+    @media only screen and (max-width: 1536px) {
+        .contactInfo {
+            background-color: #cc2929;
+            color: whitesmoke;
+            height: 19px;
+            font-size: 1em;
+            text-align: right;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-right: 15%; /* SCREEN ALTER */
+        }
+            .contactInfo span {
+                font-family: Calibri;
+                display: inline; /* SCREEN ALTER */
+            }
+            .contactInfo i {
+                display: inline; /* SCREEN ALTER */
+            }
+        .menu {
+            display: inline;
+            margin: 0;
+        }
+            .menu ul {
+                list-style-type: none;
+                margin: 0;
+                padding-right: 15%; /* SCREEN ALTER */
+                overflow: hidden;
+                background-color: #DE1B1B;
+                font-family: Calibri;
+                font-size: 120%;
+            }
+            .menu li:not(.title):not(.sandwichmenu):not(.sandwichmenu-content):not(.sandwichbutton) {
+                float: right;
+                border-right: 1px solid #cc2929;
+            }
+            .menu li:first-child {
+                border-right: none;
+            }
+            .menu li a:not(.title):not(.sandwichmenu):not(.sandwichmenu-content):not(.sandwichbutton), .dropbutton {
+                display: block; /* SCREEN ALTER */
+                width: 85px;
+                text-align: center;
+                padding: 14px 8px; /* SCREEN ALTER */
+                text-decoration: none;
+                transition: background-color 0.2s ease;
+                color: whitesmoke;
+            }
+            .menu li a:hover:not(.title):not(.sandwichmenu):not(.sandwichmenu-content):not(.sandwichbutton), .dropmenu:hover .dropbutton {
+                background-color: #cc2929;
+                color: whitesmoke;
+            }
+        /* Sandwich Menu */
+        .sandwichbutton {
+            display: none; /* SCREEN ALTER */
+            text-align: center;
+            padding: 9px 14px;
+            width: 26px;
+            font-size: 140% !important;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+            color: whitesmoke;
+        }
+        .sandwichmenu:hover .sandwichbutton {
+            background-color: #cc2929;
+            color: whitesmoke;
+        }
+        .sandwichmenu {
+            display: inline-block;
+            float: right;
+        }
+
+        .sandwichmenu-content {
+            display: none;
+            background-color: #DE1B1B;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+            .sandwichmenu-content a {
+                color: whitesmoke !important;
+                font-size: 100% !important;
+                text-align: center !important;
+                float: left;
+                padding: 10px 0px 10px 0px !important;
+                text-decoration: none;
+                box-sizing: border-box;
+                border-right: 1px solid #cc2929;
+                border-bottom: 1px solid #cc2929;
+                transition: background-color 0.2s ease !important;
+                display: inline-block !important;
+                width: 25% !important; /* SCREEN ALTER */
+            }
+                .sandwichmenu-content a:hover {
+                    background-color: #cc2929;
+                }
+        .sandwichmenu:hover .sandwichmenu-content {
+            display: inline-block !important;
+        }
+        /* End Sandwich Menu */
+        .spacer {
+            margin: 0;
+            background-color: #DE1B1B;
+            float: left;
+            padding-left: 15%; /* SCREEN ALTER */
+        }
+        .title {
+            margin: 0;
+            background-color: #DE1B1B;
+            font-family: "Times New Roman";
+            font-size: 250%;
+            color: whitesmoke;
+            text-decoration: none;
+            padding-left: 0;
+            padding-bottom: 4px;
+            float: left;
+        }
+        .dropmenu {
+            display: inline-block;
+        }
+        .dropmenu-content {
+            display: none;
+            position: absolute;
+            background-color: whitesmoke;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+            .dropmenu-content a {
+                color: grey !important;
+                font-size: 100% !important;
+                padding: 8px 16px !important;
+                min-width: 150px;
+                border-bottom: 1px solid #f1f1f1;
+                text-decoration: none;
+                transition: background-color 0.2s ease !important;
+                display: block;
+                text-align: left !important;
+            }
+                .dropmenu-content a:last-child {
+                    border-bottom: none;
+                }
+                .dropmenu-content a:hover {
+                    background-color: #d8d8d8 !important;
+                }
+        .dropmenu:hover .dropmenu-content {
+            display: block !important;
+        }
+        .breadCrumb {
+            background-color: whitesmoke;
+            box-sizing: border-box;
+            width: 100%;
+            padding-left: 15%; /* SCREEN ALTER */
+            box-shadow: 0 -1px 0 #cc2929;
+            float: left;
+        }
+            .breadCrumb a {
+                color: grey;
+                font-family: Calibri;
+                text-decoration: none;
+                font-size: 90%
+            }  
+    }
+
+    /* 3/5 Screen Size */
+    @media only screen and (max-width: 1152px) {
+            .contactInfo {
+                background-color: #cc2929;
+                color: whitesmoke;
+                height: 19px;
+                font-size: 1em;
+                text-align: right;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                padding-right: 10%; /* SCREEN ALTER */
+            }
+                .contactInfo span {
+                    font-family: Calibri;
+                    display: inline; /* SCREEN ALTER */
+                }
+                .contactInfo i {
+                    display: inline; /* SCREEN ALTER */
+                }
+            .menu {
+                display: inline;
+                margin: 0;
+            }
+                .menu ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding-right: 10%; /* SCREEN ALTER */
+                    overflow: hidden;
+                    background-color: #DE1B1B;
+                    font-family: Calibri;
+                    font-size: 120%;
+                }
+                .menu li:not(.title):not(.sandwichmenu):not(.sandwichmenu-content):not(.sandwichbutton) {
+                    float: right;
+                    border-right: 1px solid #cc2929;
+                }
+                .menu li:first-child {
+                    border-right: none;
+                }
+                .menu li a:not(.title):not(.sandwichmenu):not(.sandwichmenu-content):not(.sandwichbutton), .dropbutton {
+                    display: block; /* SCREEN ALTER */
+                    width: 85px;
+                    text-align: center;
+                    padding: 14px 2px; /* SCREEN ALTER */
+                    text-decoration: none;
+                    transition: background-color 0.2s ease;
+                    color: whitesmoke;
+                }
+                .menu li a:hover:not(.title):not(.sandwichmenu):not(.sandwichmenu-content):not(.sandwichbutton), .dropmenu:hover .dropbutton {
+                    background-color: #cc2929;
+                    color: whitesmoke;
+                }
+            /* Sandwich Menu */
+            .sandwichbutton {
+                display: none; /* SCREEN ALTER */
+                text-align: center;
+                padding: 9px 14px;
+                width: 26px;
+                font-size: 140% !important;
+                text-decoration: none;
+                transition: background-color 0.2s ease;
+                color: whitesmoke;
+            }
+            .sandwichmenu:hover .sandwichbutton {
+                background-color: #cc2929;
+                color: whitesmoke;
+            }
+            .sandwichmenu {
+                display: inline-block;
+                float: right;
+            }
+            .sandwichmenu-content {
+                display: none;
+                background-color: #DE1B1B;
+                position: absolute;
+                left: 0;
+                width: 100%;
+                z-index: 1;
+            }
+                .sandwichmenu-content a {
+                    color: whitesmoke !important;
+                    font-size: 100% !important;
+                    text-align: center !important;
+                    float: left;
+                    padding: 10px 0px 10px 0px !important;
+                    text-decoration: none;
+                    box-sizing: border-box;
+                    border-right: 1px solid #cc2929;
+                    border-bottom: 1px solid #cc2929;
+                    transition: background-color 0.2s ease !important;
+                    display: inline-block !important;
+                    width: 25% !important; /* SCREEN ALTER */
+                }
+                    .sandwichmenu-content a:hover {
+                        background-color: #cc2929;
+                    }
+            .sandwichmenu:hover .sandwichmenu-content {
+                display: inline-block !important;
+            }
+            /* End Sandwich Menu */
+            .spacer {
+                margin: 0;
+                background-color: #DE1B1B;
+                float: left;
+                padding-left: 10%; /* SCREEN ALTER */
+            }
+            .title {
+                margin: 0;
+                background-color: #DE1B1B;
+                font-family: "Times New Roman";
+                font-size: 250%;
+                color: whitesmoke;
+                text-decoration: none;
+                padding-left: 0;
+                padding-bottom: 4px;
+                float: left;
+            }
+            .dropmenu {
+                display: inline-block;
+            }
+            .dropmenu-content {
+                display: none;
+                position: absolute;
+                background-color: whitesmoke;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+                .dropmenu-content a {
+                    color: grey !important;
+                    font-size: 100% !important;
+                    padding: 8px 16px !important;
+                    min-width: 150px;
+                    border-bottom: 1px solid #f1f1f1;
+                    text-decoration: none;
+                    transition: background-color 0.2s ease !important;
+                    display: block;
+                    text-align: left !important;
+                }
+                    .dropmenu-content a:last-child {
+                        border-bottom: none;
+                    }
+
+                    .dropmenu-content a:hover {
+                        background-color: #d8d8d8 !important;
+                    }
+            .dropmenu:hover .dropmenu-content {
+                display: block !important;
+            }
+        .breadCrumb {
+            background-color: whitesmoke;
+            box-sizing: border-box;
+            width: 100%;
+            padding-left: 10%; /* SCREEN ALTER */
+            box-shadow: 0 -1px 0 #cc2929;
+            float: left;
+        }
+                .breadCrumb a {
+                    color: grey;
+                    font-family: Calibri;
+                    text-decoration: none;
+                    font-size: 90%
+                }
+        }
+
+    /* 2/5 Screen Size */
+    @media only screen and (max-width: 952px) {
+            .contactInfo {
+                background-color: #cc2929;
+                color: whitesmoke;
+                height: 19px;
+                font-size: 1em;
+                text-align: right;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                padding-right: 10%; /* SCREEN ALTER */
+            }
+                .contactInfo span {
+                    font-family: Calibri;
+                    display: none; /* SCREEN ALTER */
+                }
+                .contactInfo i {
+                    display: inline; /* SCREEN ALTER */
+                }
+            .menu {
+                display: inline;
+                margin: 0;
+            }
+                .menu ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding-right: 10%; /* SCREEN ALTER */
+                    overflow: hidden;
+                    background-color: #DE1B1B;
+                    font-family: Calibri;
+                    font-size: 120%;
+                }
+                .menu li:not(.title):not(.sandwichmenu):not(.sandwichmenu-content):not(.sandwichbutton) {
+                    float: right;
+                    border-right: 1px solid #cc2929;
+                }
+                .menu li:first-child {
+                    border-right: none;
+                }
+                .menu li a:not(.title):not(.sandwichmenu):not(.sandwichmenu-content):not(.sandwichbutton), .dropbutton {
+                    display: none; /* SCREEN ALTER */
+                    width: 85px;
+                    text-align: center;
+                    padding: 14px 2px; /* SCREEN ALTER */
+                    text-decoration: none;
+                    transition: background-color 0.2s ease;
+                    color: whitesmoke;
+                }
+                .menu li a:hover:not(.title):not(.sandwichmenu):not(.sandwichmenu-content):not(.sandwichbutton), .dropmenu:hover .dropbutton {
+                    background-color: #cc2929;
+                    color: whitesmoke;
+                }
+            /* Sandwich Menu */
+            .sandwichbutton {
+                display: block; /* SCREEN ALTER */
+                text-align: center;
+                padding: 9px 14px;
+                width: 26px;
+                font-size: 140% !important;
+                text-decoration: none;
+                transition: background-color 0.2s ease;
+                color: whitesmoke;
+            }
+            .sandwichmenu:hover .sandwichbutton {
+                background-color: #cc2929;
+                color: whitesmoke;
+            }
+            .sandwichmenu {
+                display: inline-block;
+                float: right;
+            }
+            .sandwichmenu-content {
+                display: none;
+                background-color: #DE1B1B;
+                position: absolute;
+                left: 0;
+                width: 100%;
+                z-index: 1;
+            }
+                .sandwichmenu-content a {
+                    color: whitesmoke !important;
+                    font-size: 100% !important;
+                    text-align: center !important;
+                    float: left;
+                    padding: 10px 0px 10px 0px !important;
+                    text-decoration: none;
+                    box-sizing: border-box;
+                    border-right: 1px solid #cc2929;
+                    border-bottom: 1px solid #cc2929;
+                    transition: background-color 0.2s ease !important;
+                    display: inline-block !important;
+                    width: 25% !important; /* SCREEN ALTER */
+                }
+                    .sandwichmenu-content a:hover {
+                        background-color: #cc2929;
+                    }
+            .sandwichmenu:hover .sandwichmenu-content {
+                display: inline-block !important;
+            }
+            /* End Sandwich Menu */
+            .spacer {
+                margin: 0;
+                background-color: #DE1B1B;
+                float: left;
+                padding-left: 10%; /* SCREEN ALTER */
+            }
+            .title {
+                margin: 0;
+                background-color: #DE1B1B;
+                font-family: "Times New Roman";
+                font-size: 250%;
+                color: whitesmoke;
+                text-decoration: none;
+                padding-left: 0;
+                padding-bottom: 4px;
+                float: left;
+            }
+            .dropmenu {
+                display: inline-block;
+            }
+
+            .dropmenu-content {
+                display: none;
+                position: absolute;
+                background-color: whitesmoke;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+                .dropmenu-content a {
+                    color: grey !important;
+                    font-size: 100% !important;
+                    padding: 8px 16px !important;
+                    min-width: 150px;
+                    border-bottom: 1px solid #f1f1f1;
+                    text-decoration: none;
+                    transition: background-color 0.2s ease !important;
+                    display: block;
+                    text-align: left !important;
+                }
+                    .dropmenu-content a:last-child {
+                        border-bottom: none;
+                    }
+                    .dropmenu-content a:hover {
+                        background-color: #d8d8d8 !important;
+                    }
+            .dropmenu:hover .dropmenu-content {
+                display: block !important;
+            }
+        .breadCrumb {
+            background-color: whitesmoke;
+            box-sizing: border-box;
+            width: 100%;
+            padding-left: 10%; /* SCREEN ALTER */
+            box-shadow: 0 -1px 0 #cc2929;
+            float: left;
+	    border-bottom: 1px solid #d8d8d8;
+        }
+                .breadCrumb a {
+                    color: grey;
+                    font-family: Calibri;
+                    text-decoration: none;
+                    font-size: 90%
+                }
+        }
+
+    /* 1/5 Screen Size */
+    @media only screen and (max-width: 550px) {
+            .contactInfo {
+                background-color: #cc2929;
+                color: whitesmoke;
+                height: 1px;
+                font-size: 1em;
+                text-align: right;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-right: 5%; /* SCREEN ALTER */
+            }
+                .contactInfo span {
+                    font-family: Calibri;
+                    display: none; /* SCREEN ALTER */
+                }
+                .contactInfo i {
+                    display: none; /* SCREEN ALTER */
+                }
+            .menu {
+                display: inline;
+                margin: 0;
+            }
+                .menu ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding-right: 5%; /* SCREEN ALTER */
+                    overflow: hidden;
+                    background-color: #DE1B1B;
+                    font-family: Calibri;
+                    font-size: 120%;
+                }
+                .menu li:not(.title):not(.sandwichmenu):not(.sandwichmenu-content):not(.sandwichbutton) {
+                    float: right;
+                    border-right: 1px solid #cc2929;
+                }
+                .menu li:first-child {
+                    border-right: none;
+                }
+                .menu li a:not(.title):not(.sandwichmenu):not(.sandwichmenu-content):not(.sandwichbutton), .dropbutton {
+                    display: none; /* SCREEN ALTER */
+                    width: 85px;
+                    text-align: center;
+                    padding: 14px 2px; /* SCREEN ALTER */
+                    text-decoration: none;
+                    transition: background-color 0.2s ease;
+                    color: whitesmoke;
+                }
+                .menu li a:hover:not(.title):not(.sandwichmenu):not(.sandwichmenu-content):not(.sandwichbutton), .dropmenu:hover .dropbutton {
+                    background-color: #cc2929;
+                    color: whitesmoke;
+                }
+            /* Sandwich Menu */
+            .sandwichbutton {
+                display: block; /* SCREEN ALTER */
+                text-align: center;
+                padding: 9px 14px;
+                width: 26px;
+                font-size: 140% !important;
+                text-decoration: none;
+                transition: background-color 0.2s ease;
+                color: whitesmoke;
+            }
+            .sandwichmenu:hover .sandwichbutton {
+                background-color: #cc2929;
+                color: whitesmoke;
+            }
+            .sandwichmenu {
+                display: inline-block;
+                float: right;
+            }
+            .sandwichmenu-content {
+                display: none;
+                background-color: #DE1B1B;
+                position: absolute;
+                left: 0;
+                width: 100%;
+                z-index: 1;
+            }
+                .sandwichmenu-content a {
+                    color: whitesmoke !important;
+                    font-size: 100% !important;
+                    text-align: center !important;
+                    float: left;
+                    padding: 10px 0px 10px 0px !important;
+                    text-decoration: none;
+                    box-sizing: border-box;
+                    border-right: 1px solid #cc2929;
+                    border-bottom: 1px solid #cc2929;
+                    transition: background-color 0.2s ease !important;
+                    display: inline-block !important;
+                    width: 100% !important; /* SCREEN ALTER */
+                }
+                    .sandwichmenu-content a:hover {
+                        background-color: #cc2929;
+                    }
+            .sandwichmenu:hover .sandwichmenu-content {
+                display: inline-block !important;
+            }
+            /* End Sandwich Menu */
+            .spacer {
+                margin: 0;
+                background-color: #DE1B1B;
+                float: left;
+                padding-left: 5%; /* SCREEN ALTER */
+            }
+            .title {
+                margin: 0;
+                background-color: #DE1B1B;
+                font-family: "Times New Roman";
+                font-size: 250%;
+                color: whitesmoke;
+                text-decoration: none;
+                padding-left: 0;
+                padding-bottom: 4px;
+                float: left;
+            }
+            .dropmenu {
+                display: inline-block;
+            }
+            .dropmenu-content {
+                display: none;
+                position: absolute;
+                background-color: whitesmoke;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+                .dropmenu-content a {
+                    color: grey !important;
+                    font-size: 100% !important;
+                    padding: 8px 16px !important;
+                    min-width: 130px;
+                    border-bottom: 1px solid #f1f1f1;
+                    text-decoration: none;
+                    transition: background-color 0.2s ease !important;
+                    display: block;
+                    text-align: left !important;
+                }
+                    .dropmenu-content a:last-child {
+                        border-bottom: none;
+                    }
+                    .dropmenu-content a:hover {
+                        background-color: #d8d8d8 !important;
+                    }
+            .dropmenu:hover .dropmenu-content {
+                display: block !important;
+            }
+        .breadCrumb {
+            background-color: whitesmoke;
+            box-sizing: border-box;
+            width: 100%;
+            padding-left: 5%; /* SCREEN ALTER */
+            box-shadow: 0 -1px 0 #cc2929;
+            float: left;
+	    border-bottom: 1px solid #d8d8d8;
+        }
+                .breadCrumb a {
+                    color: grey;
+                    font-family: Calibri;
+                    text-decoration: none;
+                    font-size: 90%
+                }
+        }
