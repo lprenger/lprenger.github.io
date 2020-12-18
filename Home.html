@@ -272,9 +272,9 @@
     <!-- Script for small-window slideshow -->
     <script>
         var smallIndex = 0;
-        headerPicture();
+        headerPictureSmall();
 
-        function headerPicture() {
+        function headerPictureSmall() {
             var y;
             var z = document.getElementsByClassName("slideShowSmall");
             for (y = 0; y < z.length; y++) {
@@ -283,7 +283,7 @@
             smallIndex++;
             if (smallIndex > z.length) { smallIndex = 1 }
             z[smallIndex - 1].style.display = "block";
-            setTimeout(headerPicture, 4000); // Change image every 4 seconds
+            setTimeout(headerPictureSmall, 4000); // Change image every 4 seconds
         }
     </script>
     <!-- END -->
