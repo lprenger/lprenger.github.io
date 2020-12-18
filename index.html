@@ -272,18 +272,18 @@
     <!-- Script for small-window slideshow -->
     <script>
         var smallIndex = 0;
-        headerPicture();
+        headerPictureSmall();
 
-        function headerPicture() {
-            var i;
-            var x = document.getElementsByClassName("slideShowSmall");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
+        function headerPictureSmall() {
+            var y;
+            var z = document.getElementsByClassName("slideShowSmall");
+            for (y = 0; y < z.length; y++) {
+                z[y].style.display = "none";
             }
             smallIndex++;
-            if (smallIndex > x.length) { smallIndex = 1 }
-            x[smallIndex - 1].style.display = "block";
-            setTimeout(headerPicture, 4000); // Change image every 4 seconds
+            if (smallIndex > z.length) { smallIndex = 1 }
+            z[smallIndex - 1].style.display = "block";
+            setTimeout(headerPictureSmall, 4000); // Change image every 4 seconds
         }
     </script>
     <!-- END -->
