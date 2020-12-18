@@ -20,7 +20,7 @@
             }
             .container div {
                 margin: 15px auto 15px auto;
-                width: 30%;
+                width: 45%;
                 line-height: 1.6;
                 font-family: Calibri;
                 text-align: left;
@@ -33,6 +33,13 @@
                 height: auto;
                 margin: 0 auto;
             }
+                .container div a {
+                    color: #DE1B1B;
+                }
+                    .container div a:hover {
+                        background-color: whitesmoke;
+                        color: #cc2929;
+                    }
         /* 4/5 Screen Size */
         @media only screen and (max-width: 1536px) {
             .container {
@@ -46,7 +53,7 @@
             }
                 .container div {
                     margin: 15px auto 15px auto;
-                    width: 30%;
+                    width: 45%;
                     line-height: 1.6;
                     font-family: Calibri;
                     text-align: left;
@@ -67,7 +74,7 @@
             }
                 .container div {
                     margin: 15px auto 15px auto;
-                    width: 30%;
+                    width: 45%;
                     line-height: 1.6;
                     font-family: Calibri;
                     text-align: left;
@@ -168,32 +175,83 @@
     </header>
     <!-- Location Trail -->
     <div class="breadCrumb">
-        <a href="Index.html">Home</a><a>&ensp;/&ensp;</a><a href="Products.html">Products</a><a>&ensp;/&ensp;</a><a href="Specialtysheets.html">Specialty Sheets</a>
+        <a href="Index.html">Home</a><a>&ensp;/&ensp;</a><a href="Contactus.html">Contact Us</a>
     </div>
     <!-- Page Content -->
     <div class="container">
         <div style="width:100%;margin:0 auto 0 auto;">
-            <p style="line-height:1.2;font-size:150%;color:dimgrey;">Specialty Sheets</p>
+            <p style="line-height:1.2;font-size:150%;color:dimgrey;">Contact Us</p>
         </div>
+        <!-- EMAIL FORM -->
+        <div style="margin:0 auto 15px 0;color:dimgrey;">
+            <form action="jamesmac@lakeheadnewsprint.com" method="post" enctype="text/plain">
+                Name:<br>
+                <input type="text" name="name" size="35"><br>
+                E-mail:<br>
+                <input type="text" name="mail" size="35"><br>
+                Comment:<br>
+                <textarea name="Text1" cols="40" rows="5"></textarea><br>
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+        <!-- HOURS -->
         <div>
-            <img src="specialtypaper.jpg" width="300" height="300">
+            <div style="width:100%;font-size:100%;margin:0 0 0 auto;">
+                <p style="text-align:left;width:95%;color:dimgrey;margin:0 0 10px 0;">Phone: +1 (807) 345-0500</p>
+                <p style="text-align:left;width:95%;color:dimgrey;margin:0;">Hours Of Operation:</p>
+            </div>
+            <div style="float:left;width:100px;margin:0;font-size:100%;">
+                <p style="text-align:left;width:95%;color:grey;margin:0 0 5px 15px;">Monday:<br>Tuesday:<br>Wedsday:<br>Thursday:<br>Friday:<br>Saturday:<br>Sunday:</p>
+            </div>
+            <div style="float:left;width:150px;margin:0 0 20px 0;font-size:100%;">
+                <p style="text-align:left;width:95%;color:grey;margin:0 0 5px 15px;">7:45AM-3:45PM<br>7:45AM-3:45PM<br>7:45AM-3:45PM<br>7:45AM-3:45PM<br>6:45AM-2:45PM<br>CLOSED<br>CLOSED</p>
+            </div>
         </div>
-        <div>
-            <p style="text-align:left;width:95%;font-size: 120%;color:dimgrey;margin-bottom:5px;">Description</p>
-            <p style="margin:0;">- Recycled Kraft Sheets<br><p style="margin:0 0 0 20px;">100% recycled, pre-cut sheets for uniform sized items, interleaving or void fill.</p>- Bleached Kraft Sheets<br><p style="margin:0 0 0 20px;">Near pH neutral. Used as a cleaner and more presentable void fill, interleave, or table top cover.</p>- Poly Coated Kraft Sheets<br><p style="margin:0 0 0 20px;">Used for wrapping metal parts or as a moisture barrier. Extra strong and tear resistant.</p></p>
-            <p style="text-align:left;width:95%;font-size: 120%;color:dimgrey;margin-bottom:5px;">Standard Sizes</p>
-            <p style="margin:0;">12" -&ensp;72"</p>
+        <!-- STYLE DIV -->
+        <div style="width:100%;border-top:1px solid grey;margin-top:0;"></div>
+        <!-- PRODUCT INFO -->
+        <div style="width:100%;margin:0 auto 0 auto;">
+            <p style="line-height:1.2;font-size:130%;color:dimgrey;">Product Information</p>
         </div>
-        <div>
-            <p style="text-align:left;width:95%;font-size: 120%;color:dimgrey;margin-bottom:5px;">Stocking Grades</p>
-            <p style="margin:0;">- Recycled Natural Kraft<br>&emsp;30#, 40#, 50#, 60#, 75#<br>- Bleached Kraft<br>&emsp;40#<br>- Poly Coated<p style="margin:0 0 0 20px;">50# virgin kraft with 10# LDPE on one side</p></p>
+        <!-- MANAGER -->
+        <div style="width:100%;margin:0;">
+            <p style="text-align:left;width:95%;font-size: 120%;color:dimgrey;margin:0;">James Macgillivray</p>
+            <p style="margin:0;color:dimgrey;">Manager</p>
         </div>
-        <div style="width:100%;margin:15px auto 15px auto;">
-            <p style="margin:0;padding-top:30px;border-top:1px solid grey;">Colored newsprint and hi brite groundwood specialties are also available in sheets and rolls. Contact for further information.</p>
+        <div style="margin:15px 0 0 0;color:dimgrey;width:60px;font-size:120%;text-align:left;float:left;">
+            <p style="margin:0;">Phone:<br>Fax:<br>E-mail:</p>
         </div>
-        <div style="width:150px;margin:50px auto 15px auto;background-color:#DE1B1B;border:1px solid #cc2929;">
-            <a href="Contactus.html" style="display:block;text-decoration:none;font-size:120%;color:whitesmoke;width:100%;text-align:center;transition:background-color 0.2s ease;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Contact Us</a>
+        <div style="margin:15px 0 30px 30px;color:grey;width:150px;font-size:120%;text-align:left;">
+            <p style="margin:0;">+1 (807) 345-0500<br>+1 (807) 345-6229<br><a href="mailto:jamesmac@lakeheadnewsprint.com">jamesmac@lakeheadnewsprint.com</a></p>
         </div>
+        <!-- BREAK -->
+        <div style="width:100%;margin:0 auto 0 auto;">
+            <p style="line-height:1.2;font-size:130%;color:dimgrey;">Sales Inquiries / Accounting Information</p>
+        </div>
+        <!-- SALES/ACCOUNTING -->
+        <div style="width:100%;margin:0;">
+            <p style="text-align:left;width:95%;font-size: 120%;color:dimgrey;margin:0;">Lorraine Leikkari</p>
+            <p style="margin:0;color:dimgrey;">Sales / Accounting</p>
+        </div>
+        <div style="margin:15px 0 0 0;color:dimgrey;width:60px;font-size:120%;text-align:left;float:left;">
+            <p style="margin:0;">Phone:<br>Fax:<br>E-mail:</p>
+        </div>
+        <div style="margin:15px 0 0 30px;color:grey;width:150px;font-size:120%;text-align:left;">
+            <p style="margin:0;">+1 (807) 345-0500<br>+1 (807) 345-6229<br><a href="mailto:lorraine@lakeheadnewsprint.com">lorraine@lakeheadnewsprint.com</a></p>
+        </div>
+        <!-- ACCOUNTING -->
+        <div style="width:100%;margin:30px 0 0 0;">
+            <p style="text-align:left;width:95%;font-size: 120%;color:dimgrey;margin:0;">Jim Comuzzi</p>
+            <p style="margin:0;color:dimgrey;">Accounting</p>
+        </div>
+        <div style="margin:15px 0 0 0;color:dimgrey;width:60px;font-size:120%;text-align:left;float:left;">
+            <p style="margin:0;">Phone:<br>Fax:<br>E-mail:</p>
+        </div>
+        <div style="margin:15px 0 15px 30px;color:grey;width:150px;font-size:120%;text-align:left;">
+            <p style="margin:0;">+1 (807) 345-0500<br>+1 (807) 345-6229<br><a href="mailto:jcomuzzi@lakeheadnewsprint.com">jcomuzzi@lakeheadnewsprint.com</a></p>
+        </div>
+
     </div>
     <div class="whiteSpace"></div>
     <!-- Footer Bar -->

@@ -4,7 +4,7 @@
     <title>Lakehead Newsprint</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="mainStyle2.css">
+    <link rel="stylesheet" href="mainStyle.css">
     <style>
         /* 5/5 Screen Size */
         .container {
@@ -25,13 +25,23 @@
                 font-size: 120%;
                 color: grey;
             }
-            .container div a {
-                margin: 0;
-                text-decoration: none;
-                font-size: 125%;
-                line-height: 1.2;
-                color: dimgrey;
-            }
+                .container div a {
+                    margin: 0;
+                    text-decoration: none;
+                    font-size: 125%;
+                    line-height: 1.2;
+                    color: dimgrey;
+                    transition: background-color 0.2s ease;
+                }
+                    .container div a:hover {
+                        color: #cc2929;
+                    }
+                .container div img {
+                    display: block;
+                    max-width: 100%;
+                    height: auto;
+                    margin: 0 auto;
+                }
         /* Fading animation */
         .fade {
             -webkit-animation-name: fade;
@@ -216,18 +226,18 @@
             <p style="line-height:1.2;font-size:150%;color:dimgrey;">Northwestern Ontario Paper Converter</p>
             <p style="margin-top:0;">Lakehead Newsprint is a source company for newsprint and groundwood specialty papers, in sheets or rolls, for printing or packaging. We have our own converting facility which is located in Thunder Bay, Ontario, Canada.<br><br>Lakehead Newsprint's primary suppliers are uncoated groundwood mills. Please refer to our products page for more details.</p>
         </div>
-        <div>
-            <img src="stock.jpg" style="width:100%;margin:0;">
+        <div style="margin-left:0;">
+            <img src="productspic.jpg" style="width:100%;height:auto;margin:0 auto;border-top:1px solid lightgrey;border-bottom:1px solid lightgrey;">
             <a href="Products.html">Our converted products</a>
             <p>We offer virgin newsprint, up to 100% recycled, in various basis weights. Colored newsprint and hi brite groundwood specialties also available. Available in rolls and sheets.</p>
         </div>
         <div>
-            <img src="stock.jpg" style="width:100%;margin:0;">
+            <img src="whatwedopic.jpg" style="width:100%;height:auto;margin:0 auto;border-top:1px solid lightgrey;border-bottom:1px solid lightgrey;">
             <a href="Aboutus.html">Who we are and what we do</a>
             <p>Lakehead Newsprint has been converting newsprint and kraft papers into sheets and counter rolls since 1957.</p>
         </div>
-        <div>
-            <img src="stock.jpg" style="width:100%;">
+        <div style="margin-right:0;">
+            <img src="contact.jpg" style="width:100%;height:auto;margin:0 auto;border-top:1px solid lightgrey;border-bottom:1px solid lightgrey;">
             <a href="Contactus.html">Reach out to us</a>
             <p>We encourage you to say hello! Contact us for further information on our services. Available on call Monday to Friday from 7:45pm to 3:45pm EST or by e-mail always. </p>
         </div>
@@ -276,6 +286,6 @@
             setTimeout(headerPicture, 4000); // Change image every 4 seconds
         }
     </script>
-    <!-- END OF PAGE -->
+    <!-- END -->
 </body>
 </html>
